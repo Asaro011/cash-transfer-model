@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(15, 15, 24);
+    background: linear-gradient(90deg, rgba(15, 15, 24, 1) 0%, rgba(5, 239, 177, 1) 50%, rgba(0, 181, 218, 1) 100%);
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logoPrincipal {
+    width: 10rem;
+}
+
+#nombre {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    font-size: 3rem;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*General*/
+
+
+#main {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Texto de inicio*/
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    -webkit-text-stroke: 0.15px white;
+    margin-top: 0.7rem;
+
+}
+
+
+/*Botones pricipales*/
+#mainBtn {
+    display: flex;
+    gap: 1rem;
+}
+
+#extraccion {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+
+}
+
+#extraccion::before {
+    width: calc(100% + 40px);
+    aspect-ratio: 1/1;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -20px;
+    top: 50%;
+    transform: translate(-150%, -50%);
+    transition-duration: .5s;
+    mix-blend-mode: difference;
+}
+
+#extraccion:hover::before {
+    transform: translate(0, -50%);
+}
+
+#extraccion:active {
+    transform: translateY(4px);
+    transition-duration: .3s;
+}
+
+#deposito {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+#deposito::before {
+    width: calc(100% + 40px);
+    aspect-ratio: 1/1;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -20px;
+    top: 50%;
+    transform: translate(-150%, -50%);
+    transition-duration: .5s;
+    mix-blend-mode: difference;
+}
+
+#deposito:hover::before {
+    transform: translate(0, -50%);
+}
+
+#deposito:active {
+    transform: translateY(4px);
+    transition-duration: .3s;
+}
+
+#saldoDisponible {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+#saldoDisponible::before {
+    width: calc(100% + 40px);
+    aspect-ratio: 1/1;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -20px;
+    top: 50%;
+    transform: translate(-150%, -50%);
+    transition-duration: .5s;
+    mix-blend-mode: difference;
+}
+
+#saldoDisponible:hover::before {
+    transform: translate(0, -50%);
+}
+
+#saldoDisponible:active {
+    transform: translateY(4px);
+    transition-duration: .3s;
+}
+
+#exit {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+#exit::before {
+    width: calc(100% + 40px);
+    aspect-ratio: 1/1;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -20px;
+    top: 50%;
+    transform: translate(-150%, -50%);
+    transition-duration: .5s;
+    mix-blend-mode: difference;
+}
+
+#exit:hover::before {
+    transform: translate(0, -50%);
+}
+
+#exit:active {
+    transform: translateY(4px);
+    transition-duration: .3s;
+}
+
+/*imagenes de botones principales (svg)*/
+
+.retiro {
+    width: 2rem;
+}
+
+.retiro path {
+    fill: white;
+}
+
+.ingreso {
+    width: 2rem;
+}
+
+.ingreso path {
+    fill: white;
+}
+
+.saldo {
+    width: 2rem;
+}
+
+.saldo path {
+    fill: white;
+}
+
+.exit {
+    width: 1.5rem;
+}
+
+.exit path {
+    fill: white;
+}
+
+/*Texto*/
+
+.text {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    justify-content: center;
+    font-size: x-large;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/*Botones Secundarios*/
+
+#prices {         
+    flex-wrap: wrap;         
+    gap: 10px;               
+    justify-content: center; 
+    margin: 20px 0;         
+}
+
+
+#prices button {
+    background-color: white; 
+    color: black;            
+    border: 2px solid black; 
+    border-radius: 8px;     
+    padding: 10px 20px;      
+    font-size: 1.2rem;       
+    cursor: pointer;        
+    transition: all 0.3s ease; 
+}
+
+/* Efecto al pasar el cursor sobre los botones */
+#prices button:hover {
+    background-color: black; 
+    color: white;            
+    transform: scale(1.1);   
+    border-color: black;     
+}
+
+/* Efecto al hacer clic */
+#prices button:active {
+    background-color: gray;  
+    transform: scale(1);    
+}
